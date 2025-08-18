@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 // import App from './App.jsx'
 import Home from './components/Home/Home.jsx'
-import Busca from './components/Busca.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -153,11 +152,5 @@ createRoot(document.getElementById('root')).render(
 {/* rota - if rota home = <Home /> */}
 
 {/* footer */}
-=======
-
-    <App/>
-    <Home/>
-    <Busca/>
-    main
   </StrictMode>,
 )
