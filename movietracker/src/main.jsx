@@ -5,10 +5,11 @@ import './index.css'
 import Home from './components/Home/Home.jsx'
 import About from './components/download/Download.jsx'
 import Download from './components/download/Download.jsx'
+import Login from './components/login/login.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
- main
+
 {/* header */}
 <header class="bg-gray-900">
   <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
@@ -151,6 +152,7 @@ createRoot(document.getElementById('root')).render(
 </header>
 
 <Home/>
+<Login/>
 <Download/>
 {/* rota - if rota home = <Home /> */}
 
