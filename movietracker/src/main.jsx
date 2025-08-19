@@ -11,8 +11,8 @@ const router = createBrowserRouter([
     path : "/",
     element : <Home/>,
   }
-
-])
+]) 
+import Minhaconta from './components/Minhaconta/minhaConta.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -50,36 +50,6 @@ createRoot(document.getElementById('root')).render(
                 <p class="mt-1 text-gray-400">Explore o catálogo completo</p>
               </div>
             </div>
-            {/* <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
-              <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
-                  <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
-                </svg>
-              </div>
-              <div class="flex-auto">
-                <a href="#" class="block font-semibold text-white">
-                  Filmes
-                  <span class="absolute inset-0"></span>
-                </a>
-                <p class="mt-1 text-gray-400">Explore os filmes do momento</p>
-              </div>
-            </div> */}
-            {/* <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
-              <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16">
-                  <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0"/>
-                  <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"/>
-                  <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
-                </svg>
-              </div>
-              <div class="flex-auto">
-                <a href="#" class="block font-semibold text-white">
-                  Séries
-                  <span class="absolute inset-0"></span>
-                </a>
-                <p class="mt-1 text-gray-400">Suas séries favoritas e mais</p>
-              </div>
-            </div> */}
           </div>
           <div class="grid grid-cols-2 divide-x divide-white/10 bg-gray-700/50">
             <a href="#" class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-white hover:bg-gray-700/50">
@@ -98,9 +68,9 @@ createRoot(document.getElementById('root')).render(
         </el-popover>
       </div>
 
-      <a href="#" class="text-sm/6 font-semibold text-white" onClick={() => navigate('/About')} >Sobre</a>
+      <a href="#" class="text-sm/6 font-semibold text-white">Sobre</a>
       <a href="#" class="text-sm/6 font-semibold text-white">Minhas Opiniões</a>
-      <a href="#" class="text-sm/6 font-semibold text-white">Minha Conta</a>
+      <a href="#" class="text-sm/6 font-semibold text-white" onClick={() => navigate('/Minhaconta')}>Minha Conta</a>
     </el-popover-group>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
       <a href="#" class="text-sm/6 font-semibold text-white">Login <span aria-hidden="true">&rarr;</span></a>
