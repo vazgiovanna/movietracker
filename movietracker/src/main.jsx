@@ -3,16 +3,24 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 // import App from './App.jsx'
 import Home from './components/Home/Home.jsx'
+import {createBrowserRouter,RouterProvider} from "react-router-dom"
+
+const router = createBrowserRouter([
+  {
+    path : "/",
+    element : <Home/>,
+  }
+
+])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
- main
 {/* header */}
 <header class="bg-gray-900">
   <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
     <div class="flex lg:flex-1">
       <a href="#" class="-m-1.5 p-1.5">
-        <img src="# " alt="" class="h-8 w-auto" />
+        <img className='logo' src="src\components\images\MOVIETRACKER (1).png " alt="" class="h-8 w-auto" />
       </a>
     </div>
  
