@@ -4,6 +4,8 @@ import './index.css'
 // import App from './App.jsx'
 import Home from './components/Home/Home.jsx'
 import Download from './components/download/Download.jsx'
+import Login from './components/login/login.jsx'
+import Minhaconta from './components/Minhaconta/minhaConta.jsx'
 import {createBrowserRouter,RouterProvider} from "react-router-dom"
 
 const router = createBrowserRouter([
@@ -12,7 +14,6 @@ const router = createBrowserRouter([
     element : <Home/>,
   }
 ]) 
-import Minhaconta from './components/Minhaconta/minhaConta.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -128,6 +129,7 @@ createRoot(document.getElementById('root')).render(
 </header>
 
 <Home/>
+<Login/>
 <Download/>
 {/* rota - if rota home = <Home /> */}
 
