@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 // import App from './App.jsx'
 import Home from './components/Home/Home.jsx'
-import Busca from './components/Busca.jsx'
+import About from './components/download/Download.jsx'
+import Download from './components/download/Download.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -90,7 +91,7 @@ createRoot(document.getElementById('root')).render(
         </el-popover>
       </div>
 
-      <a href="#" class="text-sm/6 font-semibold text-white">Hot Topics</a>
+      <a href="#" class="text-sm/6 font-semibold text-white" onClick={() => navigate('/About')} >Sobre</a>
       <a href="#" class="text-sm/6 font-semibold text-white">Minhas Opiniões</a>
       <a href="#" class="text-sm/6 font-semibold text-white">Minha Conta</a>
     </el-popover-group>
@@ -150,14 +151,9 @@ createRoot(document.getElementById('root')).render(
 </header>
 
 <Home/>
+<Download/>
 {/* rota - if rota home = <Home /> */}
 
 {/* footer */}
-=======
-
-    <App/>
-    <Home/>
-    <Busca/>
-    main
   </StrictMode>,
 )
