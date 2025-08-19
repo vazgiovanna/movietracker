@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 // import App from './App.jsx'
 import Home from './components/Home/Home.jsx'
+import Download from './components/download/Download.jsx'
 import {createBrowserRouter,RouterProvider} from "react-router-dom"
 
 const router = createBrowserRouter([
@@ -97,7 +98,7 @@ createRoot(document.getElementById('root')).render(
         </el-popover>
       </div>
 
-      <a href="#" class="text-sm/6 font-semibold text-white">Hot Topics</a>
+      <a href="#" class="text-sm/6 font-semibold text-white" onClick={() => navigate('/About')} >Sobre</a>
       <a href="#" class="text-sm/6 font-semibold text-white">Minhas Opiniões</a>
       <a href="#" class="text-sm/6 font-semibold text-white">Minha Conta</a>
     </el-popover-group>
@@ -157,6 +158,7 @@ createRoot(document.getElementById('root')).render(
 </header>
 
 <Home/>
+<Download/>
 {/* rota - if rota home = <Home /> */}
 
 {/* footer */}
