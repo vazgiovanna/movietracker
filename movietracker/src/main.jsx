@@ -5,10 +5,10 @@ import './index.css'
 import Home from './components/Home/Home.jsx'
 import About from './components/download/Download.jsx'
 import Download from './components/download/Download.jsx'
+import Minhaconta from './components/Minhaconta/minhaConta.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
- main
 {/* header */}
 <header class="bg-gray-900">
   <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
@@ -91,9 +91,9 @@ createRoot(document.getElementById('root')).render(
         </el-popover>
       </div>
 
-      <a href="#" class="text-sm/6 font-semibold text-white" onClick={() => navigate('/About')} >Sobre</a>
+      <a href="#" class="text-sm/6 font-semibold text-white">Sobre</a>
       <a href="#" class="text-sm/6 font-semibold text-white">Minhas Opiniões</a>
-      <a href="#" class="text-sm/6 font-semibold text-white">Minha Conta</a>
+      <a href="#" class="text-sm/6 font-semibold text-white" onClick={() => navigate('/Minhaconta')}>Minha Conta</a>
     </el-popover-group>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
       <a href="#" class="text-sm/6 font-semibold text-white">Login <span aria-hidden="true">&rarr;</span></a>
