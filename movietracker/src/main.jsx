@@ -11,7 +11,15 @@ import {createBrowserRouter,RouterProvider} from "react-router-dom"
 const router = createBrowserRouter([
   {
     path : "/",
-    element : <Home/>,
+    element : <Home/>
+  },
+  {
+    path : "/login",
+    element : <Login/>
+  },
+  {
+    path : "/MinhaConta",
+    element : <Minhaconta/>
   }
 ]) 
 
