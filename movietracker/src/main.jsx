@@ -7,6 +7,8 @@ import Home from './components/Home/Home.jsx'
 import Download from './components/download/Download.jsx'
 import Login from './components/login/login.jsx'
 import Minhaconta from './components/Minhaconta/minhaConta.jsx'
+import Cards from './components/main/Cards.jsx';
+import Filme from './components/main/Filme.jsx';
 
 import { createBrowserRouter, RouterProvider, Link, Outlet } from 'react-router-dom'
 
@@ -19,9 +21,11 @@ const router = createBrowserRouter([
       { path: 'download', element: <Download /> },
       { path: 'login', element: <Login /> },
       { path: 'minhaconta', element: <Minhaconta /> },
+      { path: 'filmes', element: <Cards /> },
+      { path: 'filme/:id', element: <Filme /> },
     ],
   },
-])
+]);
 
 function Layout() {
   return (
@@ -36,7 +40,7 @@ function Layout() {
               <img 
                 src="src/components/images/MOVIETRACKER (1).png"
                 alt="Logo"
-                className="logo h-8 w-auto"
+                className="logo" style={{ width: '150px', height: 'auto' }}
               />
             </Link>
           </div>
@@ -46,10 +50,13 @@ function Layout() {
               Sobre
             </Link>
             <Link to="/download" className="text-sm/6 font-semibold text-white">
-              Minhas Opiniões
+              Download
             </Link>
             <Link to="/minhaconta" className="text-sm/6 font-semibold text-white">
               Minha Conta
+            </Link>
+            <Link to="/filmes" className="text-sm/6 font-semibold text-white">
+              Filmes
             </Link>
           </div>
 
@@ -61,12 +68,8 @@ function Layout() {
         </nav>
       </header>
 
-      {/* Aqui o conteúdo da rota será injetado */}
+      {/* Conteúdo da rota */}
       <Outlet />
-
-      {/* Aqui você pode colocar o Download fixo, fora do Outlet se quiser */}
-      {/* <Download /> */}
-
     </>
   )
 }

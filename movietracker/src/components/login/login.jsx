@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './login.css'; // Certifique-se de que o arquivo CSS esteja no mesmo diretório
+import './login.css'; 
 
 const Login = () => {
   const [email, setEmail] = useState('');

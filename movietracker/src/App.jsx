@@ -1,26 +1,20 @@
-// import { useState } from 'react'
-// import axios from 'axios';
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import main from "./Main.jsx";
+import Filme from "./components/main/Filme.jsx";
+import Download from "./components/download/Download";
+import Cards from "./components/main/Cards.jsx";
+import Principal from "./components/main/Principal.jsx"
 
-// async function API(){
-  // try {
-      // const resposta = await axios.get(
-        // 'https://api.themoviedb.org/3',
-      // );
-      // return resposta.data;
-    // } catch (error) {
-      // console.log(error);
-    // }
-// }
-// function App() {
-  // const [count, setCount] = useState(0)
-  // return (
-    // <>
-      // <API/>
-    // </>
-  // )
-// }
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/filme/:id" element={<Filme />} />path="/filme/:id" element={<Filme />} />
+        <Route path="/download" element={<Download />} />e path="/download" element={<Download />} />
+      </Routes>  </Routes>
+    </Router>   </Router>
+  );  );
+}
 
-// export default App
+export default App;
